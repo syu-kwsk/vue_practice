@@ -6,7 +6,8 @@
 
   <body>
     <div id="app">
-      <span v-bind:title="now">
+      <button v-on:click="hello">{{button_message}}</button><br>
+      <span v-if="seen" v-bind:title="now">
       {{ message }}
       </span>
     </div>
