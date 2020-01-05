@@ -1,6 +1,6 @@
 Vue.component('msg-tag', {
   props: ['msg'],
-  template: '<h5>{{msg}}<h5>'
+  template: '<h5>{{msg}}</h5>'
 
 })
 
@@ -30,4 +30,15 @@ var app2 = new Vue({
   data: {
     message: "hello"  
   }
+})
+
+var obj = {
+  foo: 'bar'
+}
+
+Object.freeze(obj)
+
+var app3 = new Vue({
+  el: '#app3',
+  data: obj
 })
