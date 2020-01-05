@@ -11,6 +11,10 @@
       {{ message }}
       </span>
     </div>
+    <div id="app2">
+      <msg-tag v-bind:msg="message"></msg-tag>
+      <input v-model="message">
+    </div>
   </body>
   <script src="js/app.js"></script>
 </html>

@@ -1,3 +1,9 @@
+Vue.component('msg-tag', {
+  props: ['msg'],
+  template: '<h5>{{msg}}<h5>'
+
+})
+
 var app = new Vue({
   el: '#app',
   data: {
@@ -16,5 +22,12 @@ var app = new Vue({
       }
       this.seen = !(this.seen)
     }
+  }
+})
+
+var app2 = new Vue({
+  el: '#app2',
+  data: {
+    message: "hello"  
   }
 })
