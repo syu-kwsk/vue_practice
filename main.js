@@ -19,3 +19,20 @@ var app1 = new Vue({
     }
   }
 });
+
+var app2 = new Vue({
+  el: '#app2',
+  data: {
+    year: (new Date()).getFullYear()
+  },
+  computed: {
+    isUrudoshi: function() {
+      if ((this.year % 4 == 0 && this.year%100 != 0) ||
+      (this.year % 400 == 0)) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  }
+});

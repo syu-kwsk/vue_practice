@@ -13,6 +13,10 @@
     <div id="app1">
       {{price | unit}} {{price | number_format | unit}}
     </div>
+    <div id="app2">
+      調べたい年：<input type="text" v-model="year"><br>
+      {{year}}年は{{isUrudoshi ? 'うるう年' : 'うるう年でない'}}
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="main.js"></script>
   </body>
